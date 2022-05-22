@@ -13,15 +13,13 @@ int main(int argc, char *argv[]) {
 
     for (int j = image_height -1; j >= 0; --j) {
         for(int i = 0; i < image_width; ++i) {
-            double r = (double)i / (image_width - 1);
-            double g = (double)j / (image_height - 1);
-            double b = 0.25;
+            Color color = {
+                (double)i / (image_width - 1),
+                (double)j / (image_height - 1),
+                0.25
+            };
 
-            int ir = 255.999 * r;
-            int ig = 255.999 * g;
-            int ib = 255.999 * b;
-
-            image_ppm_write(ir, ig, ib);
+            image_ppm_write(color);
         }
     }
 

@@ -7,8 +7,8 @@ void image_ppm_create(const char *filename, int width, int height) {
     fprintf(image, "P3 %d %d 255\n", width, height);
 }
 
-void image_ppm_write(int r, int g, int b) {
-    fprintf(image, "%d %d %d\n", r, g, b);
+void image_ppm_write(Color c) {
+    fprintf(image, "%d %d %d\n", (int)(255.999 * c.x), (int)(255.999 * c.y), (int)(255.999 * c.z));
 }
 
 void image_ppm_close() {
