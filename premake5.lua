@@ -17,7 +17,8 @@ project "rt"
     language "C"
     
     files {
-        "src/main.c"
+        "src/main.c",
+        "src/vec3.c"
     }
     
     includedirs {
