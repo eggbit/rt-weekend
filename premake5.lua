@@ -12,7 +12,7 @@ workspace "baseline-c"
         cdialect "C99"
         optimize "Speed"
 
-project "project"
+project "rt"
     kind "ConsoleApp"
     language "C"
     
