@@ -19,7 +19,8 @@ project "rt"
     files {
         "src/main.c",
         "src/vec3.c",
-        "src/image.c"
+        "src/image.c",
+        "src/ray.c"
     }
     
     includedirs {
